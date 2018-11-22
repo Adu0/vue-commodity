@@ -5,7 +5,7 @@ import MemberComponent from '../pages/member/'
 import ShopcarComponent from '../pages/shopcar/'
 import SearchComponent from '../pages/search/'
 import newList from '../pages/newList/'
-import newInfo from '../pages/newList/newInfo/'
+import newInfo from '../pages/newinfo'
 
 Vue.use(Router)
 
