@@ -17,7 +17,7 @@
   </div>
 </template>
 <script>
-export { Toast } from "mint-ui";
+export {Toast} from "mint-ui";
 export default {
   data() {
     return {
