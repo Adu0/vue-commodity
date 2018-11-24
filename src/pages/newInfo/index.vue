@@ -60,6 +60,13 @@ export default {
     padding: 0 10px;
     text-indent: 2em;
     line-height: 25px;
+    p {
+      img {
+        width: 100%;
+        margin-right: 50px;
+        display: block;
+      }
+    }
   }
 }
 </style>

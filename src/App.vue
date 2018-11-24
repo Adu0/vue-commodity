@@ -50,7 +50,21 @@ body {
   }
   .mui-bar-tab .mui-tab-item.mui-active {
     color: @baceColor;
-  }
+	}
+	#app-counter .mui-bar-tab .mui-tab-item.mui-active {
+    color: #8f0b94;
+}
+.mui-bar-tab .mui-tab-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+}
 }
 .v-enter {
   opacity: 0;
