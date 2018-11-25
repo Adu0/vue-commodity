@@ -1,16 +1,16 @@
 <template>
-    <mt-swipe :auto="4000" class="binner-container">
-        <mt-swipe-item v-for="(item, index) in bannerList" :key="index">
-            <a :href="item.url" :class="{'full':isfull}">
-                <img src="../../images/home1 (1).jpg">
-            </a>
-        </mt-swipe-item>
-    </mt-swipe>
+  <mt-swipe :auto="4000" class="binner-container">
+    <mt-swipe-item v-for="(item, index) in bannerList" :key="index">
+      <a :href="item.url" :class="{'full':isfull}">
+        <img :src="item">
+      </a>
+    </mt-swipe-item>
+  </mt-swipe>
 </template>
 <script>
-export default{
-    props: ["bannerList", "isfull"]
-}
+export default {
+ props: ["bannerList", "isfull"]
+};
 </script>
 <style lang="less">
 .binner-container {
@@ -38,7 +38,7 @@ export default{
     }
   }
   .isfull {
-      width: 100%;
+    width: 100%;
   }
 }
 </style>

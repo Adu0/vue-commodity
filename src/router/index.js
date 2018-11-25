@@ -9,6 +9,8 @@ import newInfo from '../pages/newinfo/'
 import photoList from '../pages/photoList/'
 import Goodspurchased from '../pages/Goodspurchased'
 import GoodsInfo from '../pages/Goodspurchased/goodsinfo'
+import Goodsdesc from '../pages/Goodspurchased/goodsgodesc'
+import Goodscomment from '../pages/Goodspurchased/goodsgocomment'
 
 Vue.use(Router)
 
@@ -22,9 +24,11 @@ export default new Router({
     { path: "/search", component: SearchComponent },
     { path: "/home/newList", component: newList },
     { path: "/home/newsinfo/:id", component: newInfo },
-    {path:'/home/photoList',component:photoList},
-    {path: '/home/Goodspurchased', component: Goodspurchased },
-    { path: '/home/GoodsInfo/:id', component: GoodsInfo, name:'goodsinfo'}
+    { path:'/home/photoList',component:photoList},
+    { path: '/home/Goodspurchased', component: Goodspurchased },
+    { path: '/home/GoodsInfo/:id', component: GoodsInfo, name:'goodsinfo'},
+    { path: '/home/Goodsdesc/:id',component: Goodsdesc,name: 'goodsgodesc'},
+    { path: '/home/Goodscomment/:id',component: Goodscomment,name: 'goodsgocomment'}
   ],
   linkActiveClass: "mui-bar-tab mui-tab-item mui-active"
 });
